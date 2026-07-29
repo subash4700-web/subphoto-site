@@ -1,0 +1,297 @@
+{
+  "centerpoints": {
+    "undefined": "60% 37%",
+    "morfarmig-02.jpg": "52% 51%",
+    "gravid-hero.jpg": "70% 38%",
+    "newborn-08.jpg": "50% 58%"
+  },
+  "raekkefoelge": {
+    "bryllup/event-1782250754300": [
+      "bryllup-54.jpg",
+      "bryllup-58.jpg",
+      "bryllup-65.jpg",
+      "bryllup-19.jpg",
+      "bryllup-55.jpg",
+      "bryllup-38.jpg",
+      "bryllup-35.jpg",
+      "bryllup-41.jpg",
+      "bryllup-34.jpg",
+      "bryllup-30.jpg",
+      "bryllup-04.jpg",
+      "bryllup-47.jpg",
+      "bryllup-59.jpg"
+    ],
+    "bryllup/event-1782251223425": [
+      "bryllup-08.jpg",
+      "bryllup-09.jpg",
+      "bryllup-39.jpg",
+      "bryllup-49.jpg",
+      "bryllup-52.jpg",
+      "bryllup-40.jpg",
+      "bryllup-57.jpg"
+    ],
+    "gravid": [
+      "gravid-07.jpg",
+      "gravid-04.jpg",
+      "gravid-08.jpg",
+      "gravid-02.jpg",
+      "gravid-05.jpg",
+      "gravid-03.jpg",
+      "gravid-09.jpg",
+      "gravid-10.jpg",
+      "gravid-11.jpg",
+      "gravid-12.jpg",
+      "gravid-15.jpg",
+      "gravid-17.jpg",
+      "gravid-06.jpg",
+      "gravid-16.jpg"
+    ],
+    "morfarmig": [
+      "morfarmig-04.jpg",
+      "morfarmig-02.jpg",
+      "_A741311-Edit.jpg",
+      "morfarmig-01.jpg",
+      "_A741213-Edit-Edit.jpg",
+      "morfarmig-03.jpg",
+      "morfarmig-05.jpg",
+      "_A745467.jpg",
+      "_A741450-Edit.jpg",
+      "_A746793-Edit.jpg",
+      "_DSC5900-Edit.jpg",
+      "_A746953-Edit.jpg",
+      "_A747544-Edit.jpg",
+      "_A748060-Edit.jpg",
+      "_A747909-Edit.jpg",
+      "_DSC1695.jpg",
+      "Mette235-Edit-Edit.jpg",
+      "_A741377-Edit.jpg",
+      "_A749652-Edit.jpg",
+      "_A747952-Edit.jpg",
+      "_DSC5889-Edit.jpg",
+      "_DSC9702-3.jpg",
+      "ab53be18-6993-4d88-8b5f-484ce6722bcc"
+    ],
+    "bryllup/bryllup-1": [
+      "bryllup-60.jpg",
+      "bryllup-50.jpg",
+      "bryllup-42.jpg",
+      "bryllup-62.jpg",
+      "bryllup-01.jpg",
+      "bryllup-31.jpg",
+      "bryllup-43.jpg",
+      "bryllup-48.jpg"
+    ]
+  },
+  "heroes": {
+    "bryllup/bryllup-1": "billeder/bryllup/bryllup-31.jpg",
+    "bryllup/bryllup-2": "billeder/bryllup/bryllup-46.jpg",
+    "bryllup/bryllup-3": "billeder/bryllup/bryllup-44.jpg",
+    "cover/bryllup": "billeder/bryllup/bryllup-31.jpg",
+    "cover/portraet": "billeder/portraet/_A741560-Edit.jpg"
+  },
+  "events": {
+    "bryllup": {
+      "event-1782250754300": [
+        "bryllup-35.jpg",
+        "bryllup-41.jpg",
+        "bryllup-34.jpg",
+        "bryllup-38.jpg",
+        "bryllup-30.jpg",
+        "bryllup-04.jpg",
+        "bryllup-47.jpg",
+        "bryllup-54.jpg",
+        "bryllup-55.jpg",
+        "bryllup-58.jpg",
+        "bryllup-65.jpg",
+        "bryllup-19.jpg",
+        "bryllup-59.jpg"
+      ],
+      "bryllup-2": [
+        "bryllup-23.jpg",
+        "bryllup-25.jpg",
+        "bryllup-11.jpg",
+        "bryllup-10.jpg",
+        "bryllup-12.jpg",
+        "bryllup-46.jpg",
+        "bryllup-37.jpg"
+      ],
+      "event-1782250833767": [
+        "bryllup-03.jpg",
+        "bryllup-05.jpg",
+        "bryllup-06.jpg",
+        "bryllup-13.jpg",
+        "bryllup-28.jpg"
+      ],
+      "bryllup-1": [
+        "bryllup-01.jpg",
+        "bryllup-50.jpg",
+        "bryllup-60.jpg",
+        "bryllup-62.jpg",
+        "bryllup-31.jpg",
+        "bryllup-42.jpg",
+        "bryllup-43.jpg",
+        "bryllup-48.jpg"
+      ],
+      "bryllup-3": [
+        "bryllup-45.jpg",
+        "bryllup-51.jpg",
+        "bryllup-56.jpg",
+        "bryllup-64.jpg",
+        "bryllup-44.jpg"
+      ],
+      "_pool": [
+        "bryllup-07.jpg",
+        "bryllup-16.jpg",
+        "bryllup-18.jpg",
+        "bryllup-20.jpg",
+        "bryllup-61.jpg",
+        "bryllup-53.jpg",
+        "bryllup-24.jpg"
+      ],
+      "event-1782251171859": [
+        "bryllup-02.jpg",
+        "bryllup-14.jpg",
+        "bryllup-15.jpg",
+        "bryllup-21.jpg",
+        "bryllup-26.jpg",
+        "bryllup-32.jpg",
+        "bryllup-36.jpg"
+      ],
+      "event-1782251223425": [
+        "bryllup-08.jpg",
+        "bryllup-09.jpg",
+        "bryllup-52.jpg",
+        "bryllup-49.jpg",
+        "bryllup-39.jpg",
+        "bryllup-40.jpg",
+        "bryllup-57.jpg"
+      ],
+      "event-1782251744446": [
+        "bryllup-17.jpg",
+        "bryllup-63.jpg",
+        "bryllup-22.jpg",
+        "bryllup-27.jpg",
+        "bryllup-29.jpg",
+        "bryllup-33.jpg"
+      ]
+    },
+    "newborn": {},
+    "morfarmig": {
+      "_uploads": [
+        "_A741213-Edit-Edit.jpg",
+        "_A741311-Edit.jpg",
+        "_A741377-Edit.jpg",
+        "_A741450-Edit.jpg",
+        "_A745467.jpg",
+        "_A746793-Edit.jpg",
+        "_A746953-Edit.jpg",
+        "_A747544-Edit.jpg",
+        "_A747909-Edit.jpg",
+        "_A747909.jpg",
+        "_A747952-Edit.jpg",
+        "_A748060-Edit.jpg",
+        "_A749652-Edit.jpg",
+        "_DSC1695.jpg",
+        "_DSC5889-Edit.jpg",
+        "_DSC5900-Edit.jpg",
+        "_DSC9702-3.jpg",
+        "Mette235-Edit-Edit.jpg"
+      ]
+    },
+    "portraet": {
+      "_uploads": [
+        "_A740715.jpg",
+        "_A740741.jpg",
+        "_A741560-Edit.jpg",
+        "_A741594-Edit.jpg",
+        "_A741649-Edit-2.jpg",
+        "_A742772-Edit.jpg",
+        "_A745274-Edit.jpg",
+        "_A745312-Edit.jpg",
+        "00021-2-Edit.jpg",
+        "00021-3-Edit.jpg",
+        "00071-Edit.jpg",
+        "00100-Edit.jpg",
+        "00343-Edit.jpg",
+        "SUB00159.jpg",
+        "SUB00238-Edit.jpg",
+        "_A740918-Edit.jpg"
+      ]
+    }
+  },
+  "tekst": {
+    "bryllup/bryllup-3": "Bryllup 3",
+    "bryllup/bryllup-2": "Bryllup 2",
+    "bryllup/event-1782251171859": "Brryllup 6",
+    "bryllup/event-1782250754300": "Bryllup 4",
+    "bryllup/event-1782250833767": "Bryllup 5",
+    "bryllup/event-1782251223425": "Bryllup 7",
+    "bryllup/event-1782251744446": "Bryllup 8"
+  },
+  "extra_events": {
+    "bryllup": [
+      {
+        "id": "event-1782250754300",
+        "navn": "Aiweena og Daniel",
+        "cover": null
+      },
+      {
+        "id": "event-1782250833767",
+        "navn": "Sanne",
+        "cover": null
+      },
+      {
+        "id": "event-1782251171859",
+        "navn": "Maria",
+        "cover": null
+      },
+      {
+        "id": "event-1782251223425",
+        "navn": "Mosaver",
+        "cover": null
+      },
+      {
+        "id": "event-1782251744446",
+        "navn": "Køge",
+        "cover": null
+      }
+    ]
+  },
+  "deleted": {
+    "bryllup/_pool": [
+      "bryllup-20.jpg",
+      "bryllup-61.jpg",
+      "bryllup-07.jpg",
+      "bryllup-16.jpg",
+      "bryllup-18.jpg",
+      "bryllup-53.jpg",
+      "bryllup-24.jpg"
+    ],
+    "bryllup/bryllup-2": [
+      "bryllup-25.jpg"
+    ],
+    "bryllup/event-1782250754300": [
+      "bryllup-59.jpg"
+    ],
+    "boern": [
+      "boern-05.jpg"
+    ],
+    "gravid": [
+      "gravid-13.jpg",
+      "gravid-14.jpg",
+      "gravid-01.jpg"
+    ],
+    "morfarmig": [
+      "morfarmig-06.jpg",
+      "ed492e76-6452-4cde-99d9-b0861809de42",
+      "9e6b0c66-586d-43cb-bfd9-86bdcf4697f2"
+    ]
+  },
+  "ekstra_billeder": {},
+  "hidden_kat": [],
+  "hidden_events": {
+    "bryllup": [
+      "_pool"
+    ]
+  }
+}

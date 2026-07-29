@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galleri · Sub Photo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="galleri.html" data-title="Galleri">
+
+<section class="page-hero" style="background-image:url('billeder/newborn/newborn-08.jpg')">
+  <h1>Galleri</h1>
+</section>
+
+<!-- Fokus: vises ved delbart link, fx galleri.html#bryllup -->
+<section id="fokus" style="display:none">
+  <div class="fokus-bc"><a href="#" id="fokusClear">Galleri</a><span class="bc-sep">›</span><span id="fokusNavn"></span></div>
+  <div class="wrap center" style="padding:40px 24px 0">
+    <div class="eyebrow upper">Portfolio</div>
+    <h2 class="sec-title" id="fokusTitle"></h2>
+<div class="grid-imgs" id="fokusImgs"></div>
+    <div class="prices" id="fokusPriser" style="margin-top:34px"></div>
+    <div style="margin-top:30px"><a class="btn" id="fokusRing">Ring til mig</a> <a class="btn outline" href="kontakt.html" style="margin-left:8px">Skriv en besked</a></div>
+  </div>
+</section>
+
+<section><div class="wrap">
+  <div class="center" style="margin-bottom:10px">
+    <div class="eyebrow upper">Galleri</div>
+    <p class="lead">Klik en kategori for at se billeder og pakker. Hvert galleri har sit eget delbare link — fx <b>subphoto.dk/galleri.html#bryllup</b>.</p>
+  </div>
+  <div class="homecats" id="catgrid"></div>
+</div></section>
+
+<script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>

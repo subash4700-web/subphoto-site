@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt · Sub Photo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="kontakt.html" class="inner" data-title="Kontakt">
+
+<div class="page-head"><div class="eyebrow">Sådan foregår det</div><h1>Hvordan foregår processen?</h1></div>
+<section style="padding-top:20px"><div class="wrap">
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>Del dine tanker</h3><p>Via kontaktformularen eller grib telefonen.</p></div>
+    <div class="step"><div class="num">02</div><h3>Book en tid</h3><p>Vi planlægger din næste fotoshoot sammen.</p></div>
+    <div class="step"><div class="num">03</div><h3>Farve-koordinér</h3><p>Vælg tøj/stil — og mød op.</p></div>
+    <div class="step"><div class="num">04</div><h3>Udvælg billeder</h3><p>Til levering og print.</p></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="center" style="margin-bottom:46px"><div class="eyebrow upper">Kontakt</div><h2 class="sec-title">Lad os tage billeder sammen</h2></div>
+  <div class="contact">
+    <div>
+      <p class="lead" style="margin-bottom:24px">Skriv eller ring om dato, ønsker og spørgsmål — jeg svarer hurtigst muligt.</p>
+      <p style="margin-bottom:8px"><span class="upper" style="font-size:12px;color:var(--soft)">Telefon</span><br><a class="big" id="kTlf" href="#"></a></p>
+      <p style="margin-bottom:8px"><span class="upper" style="font-size:12px;color:var(--soft)">E-mail</span><br><a class="big" id="kEmail" href="#"></a></p>
+      <p style="margin-bottom:8px"><span class="upper" style="font-size:12px;color:var(--soft)">Område</span><br><span id="kBy"></span></p>
+      <p><span class="upper" style="font-size:12px;color:var(--soft)">Instagram</span><br><span id="kIg"></span></p>
+    </div>
+    <form id="kForm" onsubmit="return false">
+      <div class="field"><label>Navn</label><input required></div>
+      <div class="field"><label>E-mail</label><input type="email" required></div>
+      <div class="field"><label>Besked</label><textarea rows="4" required></textarea></div>
+      <button class="btn" id="sendBtn">Send besked</button>
+    </form>
+  </div>
+</div></section>
+
+<script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
