@@ -20,8 +20,8 @@ window.CONFIG = {
   ],
   centerpoints:{
     "morfarmig-02.jpg":"52% 51%",
-    "gravid-hero.jpg":"70% 38%",
-    "newborn-08.jpg":"50% 58%"
+    "gravid-hero.jpg":"62% 41%",
+    "newborn-08.jpg":"62% 47%"
   },
   kategorier:[
     { id:"gravid", navn:"Gravid", hero:"billeder/gravid/gravid-hero.jpg",
@@ -54,7 +54,7 @@ window.CONFIG = {
         { navn:"Børn 3", pris:"2.500 kr", punkter:["Studie eller lokation","Op til 3 timers fotografering","Plads til leg og pauser","15 redigerede billeder leveres digitalt","Tilkøb 133 kr/billede","Hele galleriet kan købes — spørg for pris"] }
       ] },
     { id:"portraet", navn:"Portræt", prislisteNavn:"Portræt · Børn · Familie", hero:"billeder/portraet/_A741560-Edit.jpg",
-      billeder:["billeder/portraet/portraet-01.jpg","billeder/portraet/portraet-02.jpg","billeder/portraet/portraet-03.jpg","billeder/portraet/portraet-04.jpg","billeder/portraet/portraet-05.jpg","billeder/portraet/portraet-06.jpg","billeder/portraet/00010-4-Edit.jpg","billeder/portraet/00015-3-Edit-2.jpg","billeder/portraet/00021-2-Edit.jpg","billeder/portraet/00021-3-Edit.jpg","billeder/portraet/00071-Edit.jpg","billeder/portraet/00100-Edit.jpg","billeder/portraet/00343-Edit.jpg","billeder/portraet/SUB00090-Edit-Edit.jpg","billeder/portraet/SUB00159.jpg","billeder/portraet/SUB00238-Edit.jpg","billeder/portraet/_A740715.jpg","billeder/portraet/_A740741.jpg","billeder/portraet/_A741560-Edit.jpg","billeder/portraet/_A741594-Edit.jpg","billeder/portraet/_A741649-Edit-2.jpg","billeder/portraet/_A742772-Edit.jpg","billeder/portraet/_A745274-Edit.jpg","billeder/portraet/_A745312-Edit.jpg"],
+      billeder:["billeder/portraet/_A741560-Edit.jpg","billeder/portraet/_A741649-Edit-2.jpg","billeder/portraet/portraet-06.jpg","billeder/portraet/_A741594-Edit.jpg","billeder/portraet/portraet-04.jpg","billeder/portraet/00021-3-Edit.jpg","billeder/portraet/portraet-05.jpg","billeder/portraet/00015-3-Edit-2.jpg","billeder/portraet/00071-Edit.jpg","billeder/portraet/00100-Edit.jpg","billeder/portraet/00343-Edit.jpg","billeder/portraet/SUB00090-Edit-Edit.jpg","billeder/portraet/SUB00159.jpg","billeder/portraet/SUB00238-Edit.jpg","billeder/portraet/_A740715.jpg","billeder/portraet/_A740741.jpg","billeder/portraet/_A742772-Edit.jpg","billeder/portraet/_A745274-Edit.jpg","billeder/portraet/_A745312-Edit.jpg"],
       pakker:[
         { navn:"Portræt 1", pris:"1.000 kr", punkter:["Studie eller lokation","Op til 2 timers fotografering","1-2 opsætninger i studie","5 redigerede billeder leveres digitalt","Maks 5 personer","Tilkøb 200 kr/billede"] },
         { navn:"Portræt 2", pris:"1.800 kr", punkter:["Studie eller lokation","Op til 3 timers fotografering","Mulighed for 3 opsætninger i studie","10 redigerede billeder leveres digitalt","Maks 5 personer","Tilkøb 160 kr/billede"] },
