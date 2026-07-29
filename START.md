@@ -26,11 +26,11 @@ Static, no-build site. Content lives in [data.js](data.js), rendering/behavior i
 
 2. **Velkommen / intro band** (`<section class="band">`, two-col, index.html:19-30)
    - Left: eyebrow "Velkommen", H2 "Forevig en særlig begivenhed i dit liv med Sub Photo", two intro paragraphs, "Gå til galleri" button → galleri.html
-   - Right: framed image (`billeder/morfarmig/morfarmig-04.jpg`)
+   - Right: framed image (`billeder/bryllup/bryllup-45.jpg`)
 
 3. **Galleri category grid** (`<section class="band">`, index.html:33-36)
    - Eyebrow "Galleri", H2 "Find inspiration til jeres shoot"
-   - `#catgrid` (`.homecats`) — populated from `CONFIG.kategorier` (data.js:20+), one card per category (id, navn, hero image) linking to `galleri.html#<id>`. Categories currently: gravid, newborn, morfarmig (?), bryllup
+   - `#catgrid` (`.homecats`) — populated from `CONFIG.kategorier` (data.js:20+), one card per category (id, navn, hero image) linking to `galleri.html#<id>`. Categories: gravid, newborn, morfarmig ("Mor, far og mig"), boern, portraet, bryllup
 
 4. **CTA / contact band** (`<section class="band">`, two-col, index.html:39-46)
    - Left: H2 "Skal vi skabe billeder sammen?", lead text, "Kontakt" button → kontakt.html
@@ -52,8 +52,6 @@ Static, no-build site. Content lives in [data.js](data.js), rendering/behavior i
 - `om.html`, `prisliste.html`, `anmeldelser.html`, `kontakt.html` — static content pages
 - `Sub Photo — Galleri.html` — appears to be a stray/duplicate file, not linked from NAV; verify if still needed
 
-## Open questions / possible next steps
+## Status
 
-- [ ] Confirm all 4 category ids/names in `data.js` (gravid, newborn, morfarmig, bryllup) match what should show in the homepage grid and nav dropdown
-- [ ] Decide whether `Sub Photo — Galleri.html` is dead weight and can be removed
-- [ ] No `.git` repo currently initialized in this folder — consider `git init` if version history is wanted
+Live on **subphoto.dk** via GitHub Pages (repo `subash4700-web/subphoto-site`, public). Git-based workflow: edit → commit → push → auto-deploys. See [OVERVEJELSER.md](OVERVEJELSER.md) for the full workflow write-up and current open considerations (incl. the still-unresolved `Sub Photo — Galleri.html` stray file).
