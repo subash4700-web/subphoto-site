@@ -18,7 +18,16 @@ const HIDDEN_EVENTS=JSON.parse(localStorage.getItem('subphoto_hidden_events')||'
 const SESSION_PATHS=new Map(); // basename → object URL (session only)
 const SESSION_FILES=new Map(); // basename → {File, katId} (session only)
 const ADMIN=new URLSearchParams(location.search).has('admin') || localStorage.getItem('subphoto_admin')==='1';
-document.addEventListener('keydown',e=>{ if((e.metaKey||e.ctrlKey)&&e.shiftKey&&e.key.toLowerCase()==='a'){ e.preventDefault(); localStorage.setItem('subphoto_admin', localStorage.getItem('subphoto_admin')==='1'?'0':'1'); location.reload(); }});
+const ADMIN_CODE='socmu2-marmog-zawnEj';
+document.addEventListener('keydown',e=>{
+  if((e.metaKey||e.ctrlKey)&&e.shiftKey&&e.key.toLowerCase()==='a'){
+    e.preventDefault();
+    const isAdmin=localStorage.getItem('subphoto_admin')==='1';
+    if(isAdmin){ localStorage.setItem('subphoto_admin','0'); location.reload(); return; }
+    const code=prompt('Adgangskode:');
+    if(code===ADMIN_CODE){ localStorage.setItem('subphoto_admin','1'); location.reload(); }
+  }
+});
 // Tema-toggle knap
 document.addEventListener('DOMContentLoaded',()=>{
   const nav=document.querySelector('.nav');
