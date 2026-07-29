@@ -502,18 +502,6 @@ function renderFokus(){
   renderBilledGrid(billeder,katId,k.navn,k,null);
   setPriser(); window.scrollTo({top:0,behavior:"instant"});
 }
-if($("#fokus")){
-  idbLoadFiles().then(()=>renderFokus());
-  addEventListener("hashchange",renderFokus);
-  $("#fokusClear").onclick=e=>{ e.preventDefault(); history.replaceState(null,"",location.pathname); renderFokus(); };
-}
-
-/* prisliste / faq / anmeldelser */
-if($("#prisGrupper")) $("#prisGrupper").innerHTML=C.kategorier.filter(k=>!k.skjulFraPrisliste).map(k=>`<div class="pris-grp" id="pris-${k.id}"><h3 class="cat-h">${k.prislisteNavn||k.navn}</h3>
-  <div class="prices">${k.pakker.map(p=>`<div class="price"><h3>${p.navn}</h3><div class="amount">${p.pris}</div><ul>${p.punkter.map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("")}</div></div>`).join("");
-if($("#faq")) $("#faq").innerHTML=C.faq.map(f=>`<div><h3>${f.sp}</h3><p>${f.sv}</p></div>`).join("");
-if($("#reviews")) $("#reviews").innerHTML=C.anmeldelser.map(a=>`<div class="review"><p>„${a.tekst}"</p><div class="who">${a.navn}</div></div>`).join("");
-
 /* ---- Fil-persistens (File System Access API + IndexedDB) ---- */
 function _idb(){return new Promise((res,rej)=>{const r=indexedDB.open('subphoto-fh',2);r.onupgradeneeded=e=>{const db=e.target.result;if(!db.objectStoreNames.contains('h'))db.createObjectStore('h');if(!db.objectStoreNames.contains('files'))db.createObjectStore('files');};r.onsuccess=e=>res(e.target.result);r.onerror=rej;});}
 async function idbGet(k){const db=await _idb();return new Promise((res,rej)=>{const r=db.transaction('h').objectStore('h').get(k);r.onsuccess=()=>res(r.result);r.onerror=rej;});}
@@ -542,6 +530,18 @@ async function idbLoadFiles(){
     });
   }catch(e){}
 }
+
+if($("#fokus")){
+  idbLoadFiles().then(()=>renderFokus());
+  addEventListener("hashchange",renderFokus);
+  $("#fokusClear").onclick=e=>{ e.preventDefault(); history.replaceState(null,"",location.pathname); renderFokus(); };
+}
+
+/* prisliste / faq / anmeldelser */
+if($("#prisGrupper")) $("#prisGrupper").innerHTML=C.kategorier.filter(k=>!k.skjulFraPrisliste).map(k=>`<div class="pris-grp" id="pris-${k.id}"><h3 class="cat-h">${k.prislisteNavn||k.navn}</h3>
+  <div class="prices">${k.pakker.map(p=>`<div class="price"><h3>${p.navn}</h3><div class="amount">${p.pris}</div><ul>${p.punkter.map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("")}</div></div>`).join("");
+if($("#faq")) $("#faq").innerHTML=C.faq.map(f=>`<div><h3>${f.sp}</h3><p>${f.sv}</p></div>`).join("");
+if($("#reviews")) $("#reviews").innerHTML=C.anmeldelser.map(a=>`<div class="review"><p>„${a.tekst}"</p><div class="who">${a.navn}</div></div>`).join("");
 
 function applyOverrides(d, overwrite=true){
   const merge=(target,src)=>{
