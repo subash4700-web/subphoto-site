@@ -7,7 +7,7 @@ window.CONFIG = {
   kontakt:{ email:"sub@subphoto.dk", by:"Sydsjælland", instagram:"@subphoto" },
   heroSlides:[
     { src:"billeder/gravid/gravid-hero.jpg",       kat:"gravid" },
-    { src:"billeder/newborn/newborn-08.jpg",        kat:"newborn" },
+    { src:"billeder/newborn/newborn-09.jpg",        kat:"newborn" },
     { src:"billeder/morfarmig/morfarmig-02.jpg",    kat:"morfarmig" },
     { src:"billeder/bryllup/bryllup-08.jpg",        kat:"bryllup" },
     { src:"billeder/gravid/gravid-hero-2.jpg",      kat:"gravid" },
