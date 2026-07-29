@@ -443,8 +443,12 @@ function renderFokus(){
   const hash=location.hash.replace("#","");
   const [katId,eventId]=hash.split("/");
   const k=C.kategorier.find(x=>x.id===katId);
-  if(!k){ fk.style.display="none"; return; }
+  const catgridSection=$("#catgridSection");
+  const pageHeroTitle=$("#pageHeroTitle");
+  if(!k){ fk.style.display="none"; if(catgridSection)catgridSection.style.display="block"; if(pageHeroTitle)pageHeroTitle.textContent="Galleri"; return; }
   fk.style.display="block";
+  if(catgridSection)catgridSection.style.display="none";
+  if(pageHeroTitle)pageHeroTitle.textContent=k.navn;
 
   const setPriser=()=>{ $("#fokusPriser").innerHTML=k.pakker.map(p=>`<div class="price"><h3>${p.navn}</h3><div class="amount">${p.pris}</div><ul>${p.punkter.map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join(""); $("#fokusRing").href="tel:"+C.tlfRaw; };
 
