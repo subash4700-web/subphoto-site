@@ -73,7 +73,7 @@ if($("#expYears")) $("#expYears").textContent = new Date().getFullYear()-C.start
   document.body.prepend(h);
   if(HERO_PAGES.includes(PAGE)) addEventListener("scroll",()=>h.classList.toggle("scrolled",scrollY>60));
   const menu=h.querySelector(".menu");
-  h.querySelector(".burger").onclick=()=>menu.classList.toggle("open");
+  h.querySelector(".burger").onclick=()=>{ menu.classList.toggle("open"); if(menu.classList.contains("open")) menu.scrollTop=0; };
   menu.querySelectorAll("a").forEach(a=>a.onclick=()=>menu.classList.remove("open"));
 })();
 
@@ -114,7 +114,7 @@ if($("#slides")){
   });
   const katNavn=id=>(C.kategorier.find(k=>k.id===id)||{navn:id}).navn;
   const show=i=>{const sl=$$(".slide");cur=(i+sl.length)%sl.length;sl.forEach((s,n)=>s.classList.toggle("active",n===cur));
-    const active=sl[cur]; $("#heroTag").textContent=C.tagline;$("#heroTitle").textContent=katNavn(active?.dataset.kat||'');$("#heroCount").textContent=`${cur+1} / ${sl.length}`;};
+    const active=sl[cur]; const kat=active?.dataset.kat||''; $("#heroTag").textContent=C.tagline;$("#heroTitle").textContent=katNavn(kat);$("#heroTitle").href=`galleri.html#${kat}`;$("#heroCount").textContent=`${cur+1} / ${sl.length}`;};
   show(0);$("#nextSlide").onclick=()=>show(cur+1);$("#prevSlide").onclick=()=>show(cur-1);setInterval(()=>show(cur+1),5500);
   if(ADMIN){
     const heroSection=slidesEl.closest("section")||slidesEl.parentElement;
@@ -454,10 +454,12 @@ function renderFokus(){
   const k=C.kategorier.find(x=>x.id===katId);
   const catgridSection=$("#catgridSection");
   const pageHeroTitle=$("#pageHeroTitle");
-  if(!k){ fk.style.display="none"; if(catgridSection)catgridSection.style.display="block"; if(pageHeroTitle)pageHeroTitle.textContent="Galleri"; return; }
+  const pageHero=$("#pageHero");
+  if(!k){ fk.style.display="none"; if(catgridSection)catgridSection.style.display="block"; if(pageHeroTitle)pageHeroTitle.textContent="Galleri"; if(pageHero)pageHero.style.backgroundImage=`url('billeder/newborn/newborn-08.jpg')`; return; }
   fk.style.display="block";
   if(catgridSection)catgridSection.style.display="none";
   if(pageHeroTitle)pageHeroTitle.textContent=k.navn;
+  if(pageHero)pageHero.style.backgroundImage=`url('${HERO_OVERRIDE["cover/"+k.id]||k.hero}')`;
 
   const setPriser=()=>{ $("#fokusPriser").innerHTML=k.pakker.map(p=>`<div class="price"><h3>${p.navn}</h3><div class="amount">${p.pris}</div><ul>${p.punkter.map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join(""); $("#fokusRing").href="tel:"+C.tlfRaw; };
 
